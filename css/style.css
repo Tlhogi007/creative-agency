@@ -17,6 +17,7 @@ body {
 
 h1 {
   font-size: 30px;
+
   font-weight: 500;
 }
 
@@ -59,10 +60,17 @@ section .home {
   animation: slideRight 1s 1s ease-in normal;
 }
 
+.logo a:hover {
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: 0.5s;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
+
 /* TOGGLE */
 .toggle {
   position: fixed;
@@ -148,7 +156,6 @@ a {
   z-index: 10;
   max-width: 600px;
   animation: slideRight 1s 1.5s ease-in normal;
-
   margin-right: 50%;
 }
 .home-img {
@@ -179,7 +186,7 @@ a {
 }
 
 .services .service:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px var(--primary-color);
   cursor: pointer;
 }
 
@@ -188,6 +195,14 @@ a {
   font-weight: 500;
   margin-top: 20px;
   color: #1b206e;
+}
+
+.services .service p {
+  text-align: justify;
+}
+
+.title span {
+  font-weight: bold;
 }
 
 /* WORK PAGE*/
@@ -248,11 +263,15 @@ a {
   align-items: flex-start;
 }
 
+.contact .title p {
+  text-align: center;
+}
 .contact-form {
   position: relative;
   background-color: #f9f9f9;
   width: calc(100% - 400px);
   padding: 60px 40px 20px;
+  border: 1px solid grey;
 }
 
 .contact-form form {
@@ -277,7 +296,7 @@ a {
 .contact-form .row input,
 .contact-form .row textarea {
   position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid grey;
   color: #111;
   background: transparent;
   width: 100%;
@@ -327,6 +346,9 @@ a {
 .contact-info .info-box .details p,
 .contact-info .info-box .details a {
   color: #111;
+}
+.contact-info .info-box .details a:hover {
+  color: var(--primary-color);
 }
 
 /*Animation*/
@@ -409,7 +431,7 @@ a {
   }
 
   .services .service {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
 }
